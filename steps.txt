@@ -1,0 +1,3 @@
+1st) fetch images from the unsplash API
+2nd) we gonna display 20 images from the api
+3rd) load more images when the user scrolls upto the bottom of the page

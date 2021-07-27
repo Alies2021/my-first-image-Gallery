@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- this site's icon -->
+    <link rel="icon" href="siteIcon.png">
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="App.js" defer></script>
+    <title>My Image gallery</title>
+</head>
+<body>
+    <!-- site heading -->
+    <header>
+        <h1>Explore my gallery</h1>
+    </header>
+    
+
+    <!-- loader -->
+    <div class="loader-cont" id="loader-cont">
+        <div id="loader" class="loader"></div>
+    </div>
+
+    <!-- my image gallery section (this is empty for now because i will fetch images from an api through javaScript)-->
+    <section class="img-gallery" id="img-gallery">
+
+    </section>
+
+    <!-- scroll image loader -->
+    <div id="scroll-img-loader">
+        <img src="scrolLoader.svg" alt="" id="scroll-Loader" hidden>
+    </div>
+</body>
+</html>
