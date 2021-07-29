@@ -20,13 +20,13 @@ h1 {
     margin-top: 20px;
     min-height: 89vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 8px;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 .img-gallery img {  
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 500px;
     box-shadow: 4px 7px 10px black;
 }
 
@@ -85,5 +85,11 @@ h1 {
     #img-gallery img {
         width: 300px;
         height: 300px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    header h1 {
+        font-size: 18px;
     }
 }

@@ -84,7 +84,7 @@ const displayImages = (images) => {
         img.addEventListener('load', imageLoaded);
 
         // appending the image into image gallery
-        a.appendChild(img);
+        a.appendChild(img);    
         imageGallery.appendChild(a);
 
     });
@@ -114,7 +114,3 @@ window.addEventListener('scroll', () => {
     }
 })
 
-
-
-
- 
