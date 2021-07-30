@@ -103,12 +103,19 @@ const getImages = async () => {
     }
 }
 
+// checking if the user has reached to the bottom of the page
+const isInBottom = (count) => {
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - count) {
+        return true;
+    } 
+    return false;
+}
 
 // on load
 getImages();
 
 window.addEventListener('scroll', () => {
-    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2000 && imagesReady) {
+    if (isInBottom(2000) && imagesReady) {
         imagesReady = false;
         getImages();
     }
